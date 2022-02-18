@@ -1,0 +1,189 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;  
+    height: 100vh;
+}
+
+/** Header **/
+
+header, .part2{
+    display: flex;
+    background: #490b3d;
+    color: white;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    
+}
+
+.headerlogo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.headerul{
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    font-size: 18px;
+    color: #E5E7EB;
+    align-items: center;
+}
+
+/** Deuxième partie **/
+
+.divpart2{
+    padding: 100px 0px;
+    display: flex;
+    width: 1000px;
+    gap: 48px;
+}
+
+.part2gauche {
+    flex: 1;  
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.part2droite{
+    flex: 1;
+    border: 5px solid #E5E7EB;
+    width: 500px;
+    height: 200px;
+}
+
+.part2gauche h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.part2gauche button {
+    background-color: #f1b814;
+    color: #F9FAF8;
+    padding: 5px 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+    
+/** Troisième partie **/
+
+.part3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px 48px 0;
+}
+
+.part3pola{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.part3pola div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    
+}
+
+.part3pola div img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3382F6 ;
+    border-radius: 15px;
+}
+
+.part3pola div figure{
+    text-align: center;
+    margin: 10px 0;
+    color: #6d6e70
+}
+
+/** quatrième partie **/
+
+.part4{
+    padding: 48px 0px;
+    background: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part4 h3{
+    width: 700px;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.part4 div{
+    align-self: center;
+    width: 600px;
+    text-align: end;
+}
+
+.part4 div p {
+    color:#1F2937;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/** cienquième partie **/
+
+.part5{
+    display: flex;
+    background-color: #3382F6;
+    width: 1000px;
+    align-self: center;
+    margin: 96px 0px;
+    border-radius: 7px;
+    justify-content: space-around;
+    padding: 24px 0px;
+}
+
+.part5 p{
+    color: #F9FAF8;
+}
+
+.part5 p strong{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.part5 button{
+    font-weight: 600;
+    color: #E5E7EB;
+    background-color: #3382F6;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    padding: 5px 20px;
+    align-self:center;
+}
+
+/** Footer **/
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    background: #1F2937;
+    color: #E5E7EB;
+    padding: 24px 0px;
+}
