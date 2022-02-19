@@ -12,7 +12,7 @@ body{
 /** START HEADER **/
 
 header{
-    background: #1F2937;
+    background: #2f3e46;
 }
 
 .header{
@@ -29,18 +29,58 @@ header ul {
     list-style-type: none;
     gap: 25px;  
 }
+header #logo{
+    display: flex;
+    align-self: center;
+    gap: 5px;
+}
+header #logo div{
+    width: 30px;
+    height: 30px;
+    background-color: #797d62;
+}
+
+header #logo div:nth-child(1){
+    background-color: #b58463;
+}
+
+header #logo div:nth-child(2){
+    background-color: #ddf7ff;
+}
+
+header #logo div:nth-child(3){
+    background-color: #b9e46f;
+}
+
+header #logo div:nth-child(4){
+    background-color: #ffa200;
+}
+
 
 header p{
     align-self: center;
-    color: #F9FAF8;
+    color: #cad2c5;
     font-size: 24px;
 }
 
 header ul li{
     align-self: center;
-    color: #E5E7EB;
+    color: #ddf7ff;
     font-size: 18px;
 
+}
+
+.header ul li a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+header ul li:nth-child(2){
+    color: #b9e46f;
+}
+
+header ul li:nth-child(3){
+    color: #ffa200;
 }
 
 /** END HEADER **/
@@ -58,7 +98,7 @@ header ul li{
 
 .leftspace {
     flex: 0;
-    background: #1F2937;
+    background: #2f3e46;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -141,7 +181,7 @@ header ul li{
 /** Start Part1**/
 
 .part1{
-    background: #1F2937;
+    background: #2f3e46;
     padding: 50px 0px;
     display: flex;
     justify-content: center;
@@ -159,22 +199,22 @@ header ul li{
 }
 
 .part1 div p {
-    color: #E5E7EB;
+    color: #d08c60;
     font-size: 18px;
     margin: 0;
 }
 
 .part1 div p strong{
-    color: #F9FAF8;
+    color: #cad2c5;
     font-size: 48px;
     font-weight: bolder;
     line-height: 50px;
 }
 
 .part1 div button{
-    background-color: #3882F6 ;
+    background-color: #cad2c5 ;
     border: none;
-    color: #E5E7EB;
+    color: #2f3e46;
     border-radius: 5px;
     font-weight: 600;
     padding: 5px 15px;
@@ -185,6 +225,7 @@ header ul li{
     flex: 1;
     max-height: 200px;
     max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /** End Part1**/
@@ -194,38 +235,46 @@ header ul li{
 .part2{
     display: flex;
     flex-direction: column;
-    background-color: #F9FAF8;
+    background-color: #cad2c5;
     align-items: center;
     padding: 25px 0px 100px;
     flex-wrap: wrap;
 }
 
 .part2 h2{
-    color: #1F2937;
+    color: #2f3e46;
+
 }
 
 .part2pola{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    
+}
+
+.first2{
+    margin-bottom: 50px;
 }
 
 .part2pola div{
+    background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
     width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .part2 div img{
     width: 150px;
-    border: 2px solid #3882F6;
-    border-radius: 10px;
+
 }
 .part2 div figcaption{
     margin-top: 5px;
     text-align: center;
-    color: #1F2937;
+    color: #354f52;
     font-size: 14px;
+    padding: 5px;
 }
 
 /** End Part2 **/
@@ -236,8 +285,9 @@ header ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E5E7EB ;
+    background-color: #cad2c5 ;
     padding: 100px 0px;
+    margin-top: 5px;
 }
 
 .part3 h3{
@@ -245,7 +295,7 @@ header ul li{
     width: 700px;
     font-size: 26px;
     font-weight: lighter;
-    color: #1F2937;
+    color: #354f52;
     font-style: italic;
     margin: 0;
     
@@ -256,7 +306,7 @@ header ul li{
     width: 700px;
     text-align: end;
     margin: 0;
-    color: #1F2937;
+    color: #797d62;
     font-weight: 600;
 
 }
@@ -267,7 +317,7 @@ header ul li{
 
 .part4{
     display: flex;
-    background-color: #3882F6;
+    background-color: #b58463;
     width: 1000px;
     align-self: center;
     border-radius: 5px;
@@ -278,20 +328,21 @@ header ul li{
 }
 
 .part4 p{
-    color: #E5E7EB;
+    color: #f7ebcf;
     font-size: 16px;
+    line-height: 30px;
 }
 
 .part4 p strong {
-    color: #F9FAF8;
+    color: #2f3e46;
     font-size: 24px;
 }
 
 .part4 button{
-    background-color: #3882F6;
-    border: 2px solid #F9FAF8;
+    background-color: #2f3e46;
+    border: 2px solid #f7ebcf;
     border-radius: 5px;
-    color: #F9FAF8;
+    color: #f7ebcf;
     font-weight: 600;
     margin: 0;
     padding: 5px 20px;
@@ -305,8 +356,8 @@ header ul li{
 
 /** start footer **/
 footer {
-    background-color: #1F2937;
-    color: #F9FAF8;
+    background-color: #2f3e46;
+    color: #f7ebcf;
     text-align: center;
 
 
